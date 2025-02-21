@@ -17,8 +17,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body class="max-w-[2000px] mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800">
-  <nav class="mx-auto p-4 bg-amber-400 lg:p-8">
+<body class=" mx-auto text-neutral-900 bg-white">
+
+  <!-- NAVBAR -->
+
+
+  <nav class="mx-auto p-4 bg-amber-400 lg:p-2">
     <div class="container mx-auto flex items-center justify-between">
 
       <!-- focus:outline-none focus-visible:ring-2 ring-neutral-900 rounded-sm ring-offset-4 -->
@@ -29,13 +33,13 @@
       </a>
 
       <button id="menu" class="lg:hidden">
-        <i class="ri-menu-3-line menuu"></i>
+        <i id="icon" class="ri-menu-3-line text-3xl"></i>
       </button>
-      <div role="menubar" class="hidden flex-col gap-6 lg:flex lg:flex-row lg:static lg:shadow-none lg:gap-4 lg:justify-between lg:w-full  absolute right-0 left-0 top-16 
+      <div id="menubar" role="menubar" class="hidden flex-col gap-6 lg:flex lg:flex-row lg:static lg:shadow-none lg:gap-4 lg:justify-between lg:w-full  absolute right-0 left-0 top-16 
       text-center text-lg bg-amber-400 shadow-xl p-6 items-center">
-        <a role="menuitem" class="p-2.5 font-bold text-neutral-900
+        <a role="menuitem" class="lg:p-2.5 font-bold text-neutral-900
         hover:text-neutral-600 transition-colors" href="/">Home</a>
-        <a role="menuitem" class="p-2.5 font-bold text-neutral-900
+        <a role="menuitem" class="lg:p-2.5 font-bold text-neutral-900
         hover:text-neutral-600 transition-colors" href="/">
         Reviews</a>
         <a role="menuitem" class=" font-bold text-neutral-900 lg:mr-auto
@@ -44,6 +48,61 @@
       </div>
     </div>
   </nav>
+
+
+  <!-- HEADER -->
+  <header class="relative pt-16 md:pt-24 lg:pt-48">
+    <div class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"></div>
+      <div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+        <img src="./assets/couch4(1).png" alt="Couch" class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto">
+        <img src="./assets/app2.png" alt="App" class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-52 md:w-72 lg:w-96">
+      </div>
+    </header>
+
+
+    <!-- DOWNLOAD APP -->
+     <main>
+     <section class="mt-5 lg:mt-2">
+      <div class="container mx-auto text-center ">
+        <button class="bg-teal-900 text-amber-400 rounded-sm p-2 font-bold inline-block">
+          <i class="ri-chat-download-fill"></i>
+          Download App</button>
+      </div>
+     </section>
+
+     <!-- PRODUCTS -->
+     <section aria-labelledby="partners" class="text-center grid gap-8 place-items-center">
+      <div class="grid gap-4">
+        <h2 id="partners" class="text-4xl font-bold text-amber-400">Our Partners</h2>
+        <p class="w-full max-w-lg">We’ve partnered with hundreds of smart home brands to help you create a smart home that fits your needs and doesn’t lock
+        you in.</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8 md:gap-x-16 max-w-2xl mx-auto">
+        <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+          <img src="./assets/partner1.svg" alt="Partner" class="h-16 w-16">
+        </div>
+        <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+          <img src="./assets/partner2.svg" alt="Partner" class="h-16 w-16">
+        </div>
+        <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+          <img src="./assets/partner3.svg" alt="Partner" class="h-16 w-16">
+        </div>
+        <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+          <img src="./assets/partner4.svg" alt="Partner" class="h-16 w-16">
+        </div>
+        <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+          <img src="./assets/partner5.svg" alt="Partner" class="h-16 w-16">
+        </div>
+        <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+          <img src="./assets/partner6.svg" alt="Partner" class="h-16 w-16">
+        </div>
+        <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+          <img src="./assets/partner7.svg" alt="Partner" class="h-16 w-16">
+        </div>
+      </div>
+    </section>
+    
+    </main>
 </body>
 <script type="module" src="src/main.js"></script>
 
