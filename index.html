@@ -11,6 +11,10 @@
   href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
   rel="stylesheet"
 />
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="max-w-[2000px] mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800">
@@ -20,17 +24,23 @@
       <!-- focus:outline-none focus-visible:ring-2 ring-neutral-900 rounded-sm ring-offset-4 -->
       <a href="/" aria-label="Go to homepage" class="
       lg:absolute lg:left-1/2 lg:-translate-x-1/2 z-50">
-        <img src="./assets/logo.svg" alt="Home Smart Logo" width="200" class="w-48 md:w-64 lg:w-72">
+        <!-- <img src="./assets/logo.svg" alt="Home Smart Logo" width="200" class="w-48 md:w-64 lg:w-72"> -->
+         <h1 class="font-extrabold text-4xl italic">HOMY<span class="text-teal-900">STIC.</span></h1>
       </a>
 
       <button id="menu" class="lg:hidden">
         <i class="ri-menu-3-line menuu"></i>
       </button>
-      <div role="menubar">
-        <a role="menuitem" href="/">Home</a>
-        <a role="menuitem" href="/">About</a>
-        <a role="menuitem" href="/">Contact</a>
-        <a role="menuitem" href="/">Products</a>
+      <div role="menubar" class="hidden flex-col gap-6 lg:flex lg:flex-row lg:static lg:shadow-none lg:gap-4 lg:justify-between lg:w-full  absolute right-0 left-0 top-16 
+      text-center text-lg bg-amber-400 shadow-xl p-6 items-center">
+        <a role="menuitem" class="p-2.5 font-bold text-neutral-900
+        hover:text-neutral-600 transition-colors" href="/">Home</a>
+        <a role="menuitem" class="p-2.5 font-bold text-neutral-900
+        hover:text-neutral-600 transition-colors" href="/">
+        Reviews</a>
+        <a role="menuitem" class=" font-bold text-neutral-900 lg:mr-auto
+        hover:text-neutral-600 transition-colors" href="/">Products</a>
+        <a role="menuitem" class="p-2 font-bold bg-teal-900 text-white rounded-md shadow-xl hover:shadow-none transition-colors" href="/">SignUp</a>
       </div>
     </div>
   </nav>

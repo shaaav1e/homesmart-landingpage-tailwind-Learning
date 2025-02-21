@@ -1,4 +1,8 @@
 @import "tailwindcss";
+body
+{
+  font-family:'Montserrat', sans-serif;
+}
 .menu
 {
   font-size:48px !important;
